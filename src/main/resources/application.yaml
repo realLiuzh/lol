@@ -1,0 +1,38 @@
+server:
+  servlet:
+    context-path: /lol/
+  port: 9090
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://47.96.86.132:3306/lol?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+  redis:
+    host: 47.96.86.132
+    port: 6379
+    lettuce:
+      pool:
+        max-idle: 8
+        max-wait: -1
+        max-active: 8
+        min-idle: 0
+    timeout: 30000
+    database: 3
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  global-config:
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+  type-aliases-package: com.lzh.lol.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+
+
+logging:
+  level:
+    com.lzh.lol.mapper: debug
