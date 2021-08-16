@@ -2,7 +2,9 @@ package com.lzh.lol;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.lzh.lol.service.CreditsService;
 import com.lzh.lol.service.SignService;
+import com.lzh.lol.vo.ScoreRankVo;
 import com.lzh.lol.vo.SignRankVo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,11 @@ class LolApplicationTests {
 
     @Autowired
     private SignService signService;
+
+
+    @Autowired
+    private CreditsService creditsService;
+
     public static final String USER_SCORE="USER:SCORE";
 
 
@@ -56,6 +63,9 @@ class LolApplicationTests {
 
         //redisTemplate.opsForHash().put("BIND_OPENID_WXNAME","code","wwwwwwwwwwwxName");
 
+
+        List<ScoreRankVo> topTen = creditsService.getTopTen();
+        System.out.println(topTen);
     }
 
 }

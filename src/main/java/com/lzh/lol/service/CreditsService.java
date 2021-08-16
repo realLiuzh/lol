@@ -120,11 +120,21 @@ public class CreditsService {
      * @Return java.util.List<com.lzh.lol.vo.ScoreRankVo>
      */
     public List<ScoreRankVo> getTopTen() {
-        Set<ZSetOperations.TypedTuple<String>> tuples = redisTemplate.opsForZSet().rangeWithScores(USER_SCORE, 0, 9);
+        //Set<ZSetOperations.TypedTuple<String>> tuples = redisTemplate.opsForZSet().rangeWithScores(USER_SCORE, 0, 9);
+//        Set<ZSetOperations.TypedTuple<String>> tuples = redisTemplate.opsForZSet().reverseRange(USER_SCORE, 0, 9);
+//        if (tuples == null || tuples.size() == 0) return new ArrayList<>();
+//        List<ScoreRankVo> list = SetToList(tuples);
+//        list = OpenIdTransferWxName(list);
+//        return list;
+        Set<ZSetOperations.TypedTuple<String>> tuples = redisTemplate.opsForZSet().reverseRangeWithScores(USER_SCORE, 0, 9);
+      /*  List<ScoreRankVo> list = new ArrayList<>(set);
+        list = OpenIdTransferWxName(list);
+        return list;*/
         if (tuples == null || tuples.size() == 0) return new ArrayList<>();
         List<ScoreRankVo> list = SetToList(tuples);
         list = OpenIdTransferWxName(list);
         return list;
+
     }
 
 

@@ -43,7 +43,7 @@ public class CreditsController {
      * @Date 2021/8/1 16:39
      * @Return com.lzh.lol.base.ResultInfo<java.util.List < com.lzh.lol.vo.ScoreRankVo>>
      */
-    @GetMapping("/credits/rank")
+        @GetMapping("/credits/rank")
     public ResultInfo<List<ScoreRankVo>> rank() {
         List<ScoreRankVo> list = creditsService.getTopTen();
         Collections.sort(list);
