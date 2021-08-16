@@ -47,7 +47,7 @@ public class SignController {
     //@CodeTransformAnno
     public ResultInfo<SignVo> sign(@RequestBody User user) {
 
-        AssertUtil.isTrue(StringUtils.isBlank(user.getOpenid()), "请先登录!");
+        AssertUtil.isTrue(!signService.isLogin(user.getOpenid()), "请先登录!");
         //openId与微信姓名绑定
         //signService.bindOpenAndName(user.getCode(),user.getWxName());
         signService.doSign(user.getOpenid(), LocalDate.now());
@@ -56,10 +56,14 @@ public class SignController {
         //return new ResultInfo<>();
     }
 
+
+
     private String getCodeById(String code) {
         User user = applyMapper.selectOne(new QueryWrapper<User>().eq("open_id", code).select("id"));
         return user.getId();
     }
+
+
 
     /**
      * @param

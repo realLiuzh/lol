@@ -64,8 +64,8 @@ class LolApplicationTests {
         //redisTemplate.opsForHash().put("BIND_OPENID_WXNAME","code","wwwwwwwwwwwxName");
 
 
-        List<ScoreRankVo> topTen = creditsService.getTopTen();
-        System.out.println(topTen);
+        boolean flag = signService.isLogin("oxaes5Pfe3i19kYwiLvUCKDj14E8");
+        System.out.println(flag);
     }
 
 }

@@ -256,5 +256,8 @@ public class SignService {
     }
 
 
-
+    public boolean isLogin(String openid) {
+        Object o = redisTemplate.opsForValue().get(openid);
+        return o!=null;
+    }
 }
