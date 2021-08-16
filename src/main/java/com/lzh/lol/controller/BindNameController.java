@@ -18,7 +18,7 @@ import java.util.Map;
 @RestController
 public class BindNameController {
 
-    private static final String BIND_OPENID_WXNAME = "OPENID:WXNAME";
+    public static final String BIND_OPENID_WXNAME = "OPENID:WXNAME";
 
     @Resource
     private RedisTemplate redisTemplate;

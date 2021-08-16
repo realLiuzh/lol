@@ -64,7 +64,7 @@ class LolApplicationTests {
         //redisTemplate.opsForHash().put("BIND_OPENID_WXNAME","code","wwwwwwwwwwwxName");
 
 
-        boolean flag = signService.isLogin("oxaes5Pfe3i19kYwiLvUCKDj14E8");
+        boolean flag = signService.isLogin("oxaes5CMTEX6jH-BznONsjx3mwIA");
         System.out.println(flag);
     }
 
