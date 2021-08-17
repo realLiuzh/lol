@@ -3,6 +3,7 @@ package com.lzh.lol;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.lzh.lol.service.CreditsService;
+import com.lzh.lol.service.ScheduleTask;
 import com.lzh.lol.service.SignService;
 import com.lzh.lol.vo.ScoreRankVo;
 import com.lzh.lol.vo.SignRankVo;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import javax.annotation.Resource;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -27,7 +29,10 @@ class LolApplicationTests {
     @Autowired
     private CreditsService creditsService;
 
-    public static final String USER_SCORE="USER:SCORE";
+    @Resource
+    private ScheduleTask scheduleTask;
+
+    public static final String USER_SCORE = "USER:SCORE";
 
 
     @Test
@@ -64,8 +69,11 @@ class LolApplicationTests {
         //redisTemplate.opsForHash().put("BIND_OPENID_WXNAME","code","wwwwwwwwwwwxName");
 
 
-        boolean flag = signService.isLogin("oxaes5CMTEX6jH-BznONsjx3mwIA");
-        System.out.println(flag);
+//        boolean flag = signService.isLogin("oxaes5CMTEX6jH-BznONsjx3mwIA");
+//        System.out.println(flag);
+
+        scheduleTask.redisDataToMysql();
+        //scheduleTask.saveZHashDataToMysql("USER:SCORE");
     }
 
 }

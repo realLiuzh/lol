@@ -3,6 +3,8 @@ package com.lzh.lol.controller;
 import com.lzh.lol.base.ResultInfo;
 import com.lzh.lol.utils.AssertUtil;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +19,8 @@ import java.util.Map;
  */
 @RestController
 public class BindNameController {
+
+    private Logger logger= LoggerFactory.getLogger(BindNameController.class);
 
     public static final String BIND_OPENID_WXNAME = "OPENID:WXNAME";
 
@@ -36,6 +40,7 @@ public class BindNameController {
         String wxName = map.get("wxName");
         AssertUtil.isTrue(StringUtils.isBlank(openid)||StringUtils.isBlank(wxName),
                 "open_id或者微信名为空!");
+        logger.info("微信名字与openid绑定--->{}:{}",wxName,openid);
         redisTemplate.opsForHash().put(BIND_OPENID_WXNAME, openid, wxName);
         return new ResultInfo<>();
     }
