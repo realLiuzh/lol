@@ -69,8 +69,7 @@ public class ApplyService {
         AssertUtil.isTrue(this.isApply(user.getOpenid()),"当前用户已报名");
         AssertUtil.isTrue(StringUtils.isBlank(user.getName())||!user.getName().matches("^[\\u2E80-\\u9FFF]+$"), "姓名输入有误!");
         //AssertUtil.isTrue(StringUtils.isBlank(user.getGender()),"性别不能为空");
-        AssertUtil.isTrue(StringUtils.isBlank(user.getPhone()) || !user.getPhone().matches("^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$"),
-                "手机号输入有误!");
+//        AssertUtil.isTrue(StringUtils.isBlank(user.getPhone()) || !user.getPhone().matches("^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$"),
+//                "手机号输入有误!");
     }
-
 }
