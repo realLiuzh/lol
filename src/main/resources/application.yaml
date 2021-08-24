@@ -22,7 +22,6 @@ spring:
     database: 3
 
 mybatis-plus:
-  mapper-locations: classpath*:/mapper/*Mapper.xml
   global-config:
     db-config:
       logic-delete-value: 0
@@ -31,6 +30,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  mapper-locations: classpath:mapper/*.xml
 
 
 logging:

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.lzh.lol.mapper.ApplyMapper;
 import com.lzh.lol.mapper.TeamMapper;
+import com.lzh.lol.po.Competition;
 import com.lzh.lol.po.Team;
 import com.lzh.lol.po.User;
 import com.lzh.lol.utils.AssertUtil;
@@ -11,10 +12,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * @ClassName TeamService
@@ -275,6 +274,20 @@ public class TeamService {
         AssertUtil.isTrue(!checkIsValid(team.getMemberId()), "战队成员尚未全部报名!");
 
     }
+
+
+/*    public void selectTeamIdMapName(){
+        QueryWrapper<Team> queryWrapper = new QueryWrapper<>();
+        queryWrapper.select("id","team_name");
+        List<Map<String, Object>> list = teamMapper.selectMaps(queryWrapper);
+        Map<String, Object> stringObjectMap = list.get(1);
+        Set<Map.Entry<String, Object>> set = stringObjectMap.entrySet();
+        set.forEach(o-> System.out.println(o.getKey()+"  "+o.getValue()));
+*//*        maps.forEach(stringObjectMap -> {
+            Set<Map.Entry<String, Object>> set = stringObjectMap.entrySet();
+            set.forEach(o-> System.out.println(o.getKey()+"   "+o.getValue()));
+        });*//*
+    }*/
 
 
 }

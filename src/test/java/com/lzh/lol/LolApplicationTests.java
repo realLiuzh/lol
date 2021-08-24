@@ -2,6 +2,7 @@ package com.lzh.lol;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.lzh.lol.service.CompetitionService;
 import com.lzh.lol.service.CreditsService;
 import com.lzh.lol.service.ScheduleTask;
 import com.lzh.lol.service.SignService;
@@ -26,6 +27,7 @@ class LolApplicationTests {
     private SignService signService;
 
 
+
     @Autowired
     private CreditsService creditsService;
 
@@ -33,6 +35,9 @@ class LolApplicationTests {
     private ScheduleTask scheduleTask;
 
     public static final String USER_SCORE = "USER:SCORE";
+
+    @Autowired
+    private CompetitionService competitionService;
 
 
     @Test
@@ -72,8 +77,14 @@ class LolApplicationTests {
 //        boolean flag = signService.isLogin("oxaes5CMTEX6jH-BznONsjx3mwIA");
 //        System.out.println(flag);
 
-        scheduleTask.redisDataToMysql();
+        //scheduleTask.redisDataToMysql();
         //scheduleTask.saveZHashDataToMysql("USER:SCORE");
     }
 
+    @Test
+    void test2(){
+        competitionService.selectAllCompetition();
+
+
+    }
 }
