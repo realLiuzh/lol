@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author lzh
  * @since 2021-08-23
  */
-public interface CompetitionMapper extends BaseMapper<Competition> {
+public interface CompetitionMapper extends BaseMapper<Competition>  {
 
 }
