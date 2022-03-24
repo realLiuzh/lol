@@ -18,4 +18,11 @@ import java.util.List;
 public interface BetMapper extends BaseMapper<Bet> {
 
     List<MyBetDTO> myBet(String openid);
+
+
+
+
+
+
+
 }

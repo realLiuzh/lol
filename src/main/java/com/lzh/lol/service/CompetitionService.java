@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
  * @since 2021-08-23
  */
 @Service
-public class CompetitionService {
+public class CompetitionService  {
 
     @Resource
     private CompetitionMapper competitionMapper;

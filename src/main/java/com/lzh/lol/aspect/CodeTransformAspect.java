@@ -26,6 +26,27 @@ import java.lang.reflect.Method;
  */
 @Aspect
 @Component
+/**
+ *
+ * 前端->openId(wx小程序唯一标识)->后端
+ * 切面-openid->userId
+ *
+ *
+ * User user=new User();
+ *
+ * ioc
+ * User -> Bean ->容器
+ * @Autowaied @Resource ->User
+ * 控制权 -》 ioc
+ *
+ * aop
+ * |
+ * |
+ * |
+ *
+ * ---------------------------
+ *
+ */
 public class CodeTransformAspect {
 
     Logger logger = LoggerFactory.getLogger(CodeTransformAspect.class);

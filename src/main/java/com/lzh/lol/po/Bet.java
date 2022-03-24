@@ -37,7 +37,7 @@ public class Bet {
 
     private Integer betTeamId;
 
-    private Integer betScore;
+    private Double betScore;
 
     private Date createDate;
 }

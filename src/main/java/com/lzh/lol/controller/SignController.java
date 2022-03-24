@@ -57,7 +57,7 @@ public class SignController {
         signService.doSign(user.getOpenid(), LocalDate.now());
 
         Integer score = creditsService.countAddWeight(user.getOpenid());
-        creditsService.addScore(user.getOpenid(),score);
+        creditsService.addScore(user.getOpenid(),Double.parseDouble(score+""));
 
         logger.info("签到:{}签到成功!增加{}积分",user.getOpenid(),score);
 

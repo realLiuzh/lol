@@ -83,7 +83,7 @@ class LolApplicationTests {
 
     @Test
     void test2(){
-        competitionService.selectAllCompetition();
+        //competitionService.selectAllCompetition();
 
 
     }

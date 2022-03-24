@@ -36,3 +36,6 @@ mybatis-plus:
 logging:
   level:
     com.lzh.lol.mapper: debug
+
+bet:
+  profit: 2

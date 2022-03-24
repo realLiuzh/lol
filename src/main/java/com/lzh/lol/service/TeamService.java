@@ -160,7 +160,7 @@ public class TeamService {
      * @Date 2021/8/2 21:11
      * @Return java.util.List<java.lang.String>
      */
-    private List<String> getMemberId(Integer teamId) {
+    public List<String> getMemberId(Integer teamId) {
         QueryWrapper<User> wrapper = new QueryWrapper<>();
         wrapper.eq("team", teamId)
                 .select("id");

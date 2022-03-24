@@ -23,6 +23,6 @@ public class BetVO {
 
     private Integer betTeamId;
 
-    private Integer betScore;
+    private Double betScore;
 
 }

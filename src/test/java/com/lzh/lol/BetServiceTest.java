@@ -22,8 +22,8 @@ public class BetServiceTest {
 
     @Test
     public void test1(){
-        List<MyBetVO> list = betService.myBat("oxaes5CMTEX6jH-BznONsjx2mwIA");
-        list.forEach(System.out::println);
+       // List<MyBetVO> list = betService.myBat("oxaes5CMTEX6jH-BznONsjx2mwIA");
+       // list.forEach(System.out::println);
 
 
 

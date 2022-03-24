@@ -107,7 +107,7 @@ public class CreditsService {
      * @Date 2021/8/1 14:30
      * @Return void
      */
-    public void addScore(String id, Integer score) {
+    public void addScore(String id, Double score) {
         //2.存到redis中去,以zset的格式
         redisTemplate.opsForZSet().incrementScore(USER_SCORE, id, score);
     }

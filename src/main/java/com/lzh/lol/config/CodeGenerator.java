@@ -7,13 +7,12 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
-import java.util.Arrays;
 
 /**
  * @author 志昊的刘
  * @version 1.0
  * @description: TODO
- * @date 2021/8/23 11:40
+ * @date 2021/9/3 15:40
  */
 public class CodeGenerator {
 

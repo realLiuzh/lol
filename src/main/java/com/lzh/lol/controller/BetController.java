@@ -2,6 +2,7 @@ package com.lzh.lol.controller;
 
 
 import com.lzh.lol.base.ResultInfo;
+import com.lzh.lol.po.Bet;
 import com.lzh.lol.service.BetService;
 import com.lzh.lol.service.CreditsService;
 import com.lzh.lol.vo.BetVO;
@@ -40,5 +41,10 @@ public class BetController {
         return new ResultInfo<>(betService.myBat(openid));
     }
 
+    @PostMapping("/influenceOfBetting")
+    public ResultInfo<Object> influenceOfBetting(Bet bet){
+        betService.influenceOfBetting(bet.getCompetitionId(),bet.getBetTeamId());
+        return new ResultInfo<>(200,"下注结果修改成功",null);
+    }
 }
 

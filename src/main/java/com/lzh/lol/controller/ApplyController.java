@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName ApplyController
@@ -47,6 +48,12 @@ public class ApplyController {
     public ResultInfo<Boolean> isApply(@RequestParam String openid){
         boolean flag = applyService.isApply(openid);
         return new ResultInfo<>(flag);
+    }
+
+
+    @PostMapping("/hello")
+    public void hello(@RequestParam String uid){
+        System.out.println(uid);
     }
 
 }
