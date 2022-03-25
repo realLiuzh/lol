@@ -4,7 +4,7 @@ stages{
 
 stage('拉取代码'){
 steps{
-echo '拉取 */${branch} 分支的代码'
+echo '拉取'${branch} '分支的代码'
 }
 }
 
