@@ -1,0 +1,14 @@
+<image class="mask" src="http://47.96.86.132:9099/1018.png" mode="aspectFill"></image>
+<view class="content" wx:for="{{team}}" wx:key="id">
+    <view class="top">
+        <view class="time">{{item.betCreate}}</view>
+        <view>{{item.teamName1}}vs{{item.teamName2}}</view>
+    </view>
+    <view class="center">
+        <view>下注队伍：{{item.betTeam}}</view>
+        <view>获胜队伍：{{item.winTeam}}</view>
+    </view>
+    <view class="bottom">
+        <view>积分：{{item.userGet}}</view>
+    </view>
+</view>

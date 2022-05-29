@@ -1,0 +1,12 @@
+<image class="image" src="http://47.96.86.132:9099/14.jpg" mode="aspectFill" />
+<button bind:tap="sub" class="sign"></button>
+<!-- 签到排行榜 -->
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange" class="tabs">
+    <block wx:if="{{tabs[0].isActive}}">
+        <listTime listTime="{{listTime}}"></listTime>    
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+       <listTime listPoint="{{listPoint}}"></listTime>
+    </block>
+</tabs>
+  

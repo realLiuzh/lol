@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/imgShow/imgShow",
+    "pages/signIn/signIn",
+    "pages/signGame/signGame",
+    "pages/my/my",
+    "pages/myTeam/myTeam",
+    "pages/quiz/quiz",
+    "pages/quizteam/quizteam" ,
+    "pages/quizRecord/quizRecord"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "LOL交流协会",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#2c3e50",
+    "list": [
+      {
+      "pagePath": "pages/signIn/signIn",
+      "text": "签到",
+      "iconPath": "img/sign.png",
+      "selectedIconPath": "img/sign_in.png"
+      },
+      {
+        "pagePath": "pages/signGame/signGame",
+        "text": "报名",
+        "iconPath": "img/game.png",
+        "selectedIconPath": "img/game_in.png"
+      },
+      {
+        "pagePath": "pages/quiz/quiz",
+        "text": "竞猜",
+        "iconPath": "img/quiz.png",
+        "selectedIconPath": "img/quiz_in.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my_in.png"
+      }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

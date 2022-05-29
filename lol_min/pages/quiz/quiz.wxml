@@ -1,0 +1,15 @@
+<image class="mask" src="http://47.96.86.132:9099/1020.png" mode="aspectFill" ></image>
+<view wx:for="{{team}}" wx:key="id">
+    <navigator url="/pages/quizteam/quizteam?id={{item.id}}" hover-class="navigator-hover" open-type="navigate">
+        <view class="content">
+            <view class="time">{{item.createDate}}</view>
+            <view class="teamvs">
+                <view class="name1">{{item.teamName1}}</view>
+                <view class="image">
+                    <image class="imageSize" src="../../img/vs.png" mode="widthFix" />
+                </view>
+                <view class="name2">{{item.teamName2}}</view>
+            </view>
+        </view>
+    </navigator>
+</view>

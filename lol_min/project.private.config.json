@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/signGame/signGame",
+          "pathName": "pages/signGame/signGame",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myTeam/myTeam",
+          "pathName": "pages/myTeam/myTeam",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/imgShow/imgShow",
+          "pathName": "pages/imgShow/imgShow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/signIn/signIn",
+          "pathName": "pages/signIn/signIn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/quiz/quiz",
+          "pathName": "pages/quiz/quiz",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/quizteam/quizteam",
+          "pathName": "pages/quizteam/quizteam",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/quizRecord/quizRecord",
+          "pathName": "pages/quizRecord/quizRecord",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/quizRecord/quizRecord",
+          "pathName": "pages/quizRecord/quizRecord",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

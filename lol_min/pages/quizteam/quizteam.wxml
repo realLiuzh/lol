@@ -1,0 +1,30 @@
+<view class="content">
+    <view class="time">{{teamInform.createDate}}</view>
+    <view class="teamvs">
+        <view class="name">{{teamInform.teamName1}}</view>
+        <view class="image">
+            <image class="imageSize" src="../../img/vs.png" mode="widthFix" />
+        </view>
+        <view class="name">{{teamInform.teamName2}}</view>
+    </view>
+    <view class="victory">
+        <button bind:tap="intteamone">{{teamInform.teamName1}}胜利</button>
+        <button bind:tap="intteamtwo">{{teamInform.teamName2}}胜利</button>
+    </view>
+    <view class="select">
+        <view class="point">
+            剩余积分：{{point}}
+        </view>
+        <view class="pointPut">
+            <input class="" value="" bindinput="pointPut" type="number" placeholder="请输入积分" placeholder-style="" placeholder-class="input-placeholder">
+                
+            </input>
+        </view>
+    </view>
+    <view class="confirm">
+        <view class="point">
+            每次竞猜最高投注2500
+        </view>
+          <button bind:tap="sub" class="sub">确认投注</button>
+    </view>
+</view>

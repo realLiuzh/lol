@@ -1,0 +1,53 @@
+page {
+  overflow: hidden;
+  position: fixed;
+  background-image: url('http://47.96.86.132:9099/1019.png');
+  /*下面的是关键的设置100%显示*/
+  background-size: 100% 100%;
+}
+page .content {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.35714286);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+page .content .confirm {
+  margin-top: 3rem;
+}
+page .content .confirm .sub {
+  margin-top: 2rem;
+}
+page .content .select {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+page .content .select .pointPut {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+page .content .select .pointPut .input-placeholder {
+  color: black;
+}
+page .content .victory {
+  display: flex;
+  justify-content: space-around;
+}
+page .content .victory button {
+  background-color: transparent;
+}
+page .content .teamvs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+page .content .teamvs .name {
+  font-size: 2rem;
+}
+page .content .teamvs .image .imageSize {
+  width: 7rem;
+}

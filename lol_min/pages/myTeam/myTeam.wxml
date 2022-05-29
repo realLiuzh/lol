@@ -1,0 +1,28 @@
+<!-- <image class="background" src="http://47.96.86.132:9090/lol/file?name=8.gif" mode="widthFix" /> -->
+<view class="word">
+    <view class="content">
+        <view class="title">我的战队</view>
+        <view class="team">
+            <view class="name">队名</view>
+            <input class="name_int" value="{{team.teamName}}" bindinput="subteam" data-obj="teamName"  type="text" placeholder="请输入队名" placeholder-class="input-placeholder"></input>
+        </view>
+        <view class="team">
+            <view class="name">队长</view>
+            <input class="name_int" value="{{team.captainId}}" bindinput="subteam" data-obj="captainId"  type="text" maxlength='10' placeholder="请输入队长学号" placeholder-class="input-placeholder"></input>
+        </view>
+        <view class="team">
+            <view class="name">队员</view>
+            <view class="players">
+                <input class="name_int" value="{{team.memberId[0]}}" bindinput="subteam" data-obj="memberId[0]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+                <input class="name_int" value="{{team.memberId[1]}}" bindinput="subteam" data-obj="memberId[1]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+                <input class="name_int" value="{{team.memberId[2]}}" bindinput="subteam" data-obj="memberId[2]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+                <input class="name_int" value="{{team.memberId[3]}}" bindinput="subteam" data-obj="memberId[3]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+                <input class="name_int" value="{{team.memberId[4]}}" bindinput="subteam" data-obj="memberId[4]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+                <input class="name_int" value="{{team.memberId[5]}}" bindinput="subteam" data-obj="memberId[5]"  type="number" maxlength='10' placeholder="请输入队员学号" placeholder-class="input-placeholder"></input>
+            </view>
+        </view>
+        <button wx:if="{{showBut}}" type="default" plain="true" class="but" bind:tap="subinfo">创建战队</button>
+        <button wx:else type="default" plain="true" class="but" bind:tap="changeinfo">修改信息</button>
+        <button type="default" plain="true" class="but" bind:tap="isexit">退出战队</button>
+    </view>
+</view>

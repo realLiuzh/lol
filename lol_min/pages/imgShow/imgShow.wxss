@@ -1,0 +1,13 @@
+.next {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  padding: 0.3rem;
+  background-color: #dfe4ea;
+}
+.img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+}

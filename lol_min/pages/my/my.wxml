@@ -1,0 +1,32 @@
+<view class="background">
+    <image class="mask" src="http://47.96.86.132:9099/2.jpg" mode="aspectFill" hidden="{{showMy}}"></image>
+    <button plain class="sub" hidden="{{showMy}}" bind:tap="sub">登 录</button>
+    <view wx:if="{{userInfo.avatarUrl}}" class="user_info_wrap">
+        <view class="user_img_wrap">
+            <image class="user_bg" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
+            <view class="user_info">
+                <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+                <view class="user_name">{{userInfo.nickName}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="integral">
+        <view class="my">
+            <i class="iconfont icon-jifen"></i>
+            我的积分
+        </view>
+        <view class="point">{{point}}</view>
+    </view>
+    <navigator class="clan"  url="/pages/myTeam/myTeam">
+        <i class="iconfont icon-qiangxianduiwu"></i>
+        <view class="my">我的战队</view>
+    </navigator>
+    <navigator class="integral"  url="/pages/quizRecord/quizRecord">
+        <view class="my">
+            <i class="iconfont icon-jingcai2"></i>
+            竞猜记录
+        </view>
+    </navigator>
+</view>
+
+  

@@ -1,0 +1,41 @@
+.mask{
+  position: fixed;
+  //铺满手机
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.5;
+}
+.content {
+  padding: 1rem;
+  width: 100%;
+  height: 25vh;
+  .teamvs {
+    .name1 {
+      position: absolute;
+      left: 20%;
+      line-height: 16vh;
+      transform: translate(-50%);
+    }
+    .name2 {
+      position: absolute;
+      left: 80%;
+      line-height: 16vh;
+      transform: translate(-50%);
+    }
+    .image {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .name1,
+    .name2 {
+      font-size: 1.5rem;
+    }
+    .image {
+      .imageSize {
+        width: 6rem;
+      }
+    }
+  }
+}

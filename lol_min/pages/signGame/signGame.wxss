@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2703874 */
+  src: url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.woff2?t=1628168431371') format('woff2'), url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.woff?t=1628168431371') format('woff'), url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.ttf?t=1628168431371') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-yingxionglianmeng:before {
+  content: "\e77f";
+}
+.icon-bai:before {
+  content: "\e6e8";
+}
+.icon-fox:before {
+  content: "\e604";
+}
+.icon-caise-kuqi:before {
+  content: "\e62f";
+}
+.icon-jifen:before {
+  content: "\e62a";
+}
+.icon-qiangxianduiwu:before {
+  content: "\e77a";
+}
+.icon-gerenzhongxin:before {
+  content: "\e606";
+}
+.icon-jiangbei:before {
+  content: "\e608";
+}
+.icon-qiandao1:before {
+  content: "\ef58";
+}
+.icon-gerenzhongxin-copy:before {
+  content: "\ef5a";
+}
+.icon-qiandao1-copy:before {
+  content: "\ef5b";
+}
+.icon-jiangbei-copy:before {
+  content: "\ef5c";
+}
+page {
+  overflow: hidden;
+  position: fixed;
+  background-image: url("http://47.96.86.132:9099/1.gif");
+  /*下面的是关键的设置100%显示*/
+  background-size: 100% 100%;
+}
+page .white {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+page .white .whiteBack {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.35714286);
+}
+page .white .whiteBack .icon-yingxionglianmeng {
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+page .white .whiteBack .text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+page .word {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+page .word .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+page .word .content .form {
+  padding: 2rem 0;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.35714286);
+  width: 85vw;
+  border-radius: 1rem;
+}
+page .word .content .form .header {
+  text-align: center;
+  font-size: 1.4rem;
+}
+page .word .content .form .information > view {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+page .word .content .form .information > view .fontsize {
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+page .word .content .form .information > view .rule_name {
+  width: 8rem;
+}
+page .word .content .form .information > view .inputSize {
+  width: 75%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  color: #2f3542;
+  border: 1px solid white;
+  padding-left: 0.5rem;
+}
+page .word .content .form .information > view .text_style {
+  color: #2f3542;
+  padding-left: 1rem;
+}
+page .word .content .form .information > view .regulation {
+  margin-left: 0.5rem;
+}

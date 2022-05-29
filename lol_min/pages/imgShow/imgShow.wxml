@@ -1,0 +1,6 @@
+<navigator class="next" url="/pages/signIn/signIn" hover-class="navigator-hover" open-type="switchTab" bind:tap="next">
+    跳过
+</navigator>
+<!-- <view class="img" style="background-image:url('{{imgUrl}}')"></view> -->
+<image class="img" src="{{imgUrl}}" mode="aspectFill" />
+  

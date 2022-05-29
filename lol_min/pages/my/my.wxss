@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 2703874 */
+  src: url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.woff2?t=1628168431371') format('woff2'), url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.woff?t=1628168431371') format('woff'), url('//at.alicdn.com/t/font_2703874_ef77xnl3qdm.ttf?t=1628168431371') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-yingxionglianmeng:before {
+  content: "\e77f";
+}
+.icon-bai:before {
+  content: "\e6e8";
+}
+.icon-fox:before {
+  content: "\e604";
+}
+.icon-caise-kuqi:before {
+  content: "\e62f";
+}
+.icon-jifen:before {
+  content: "\e62a";
+}
+.icon-qiangxianduiwu:before {
+  content: "\e77a";
+}
+.icon-gerenzhongxin:before {
+  content: "\e606";
+}
+.icon-jiangbei:before {
+  content: "\e608";
+}
+.icon-qiandao1:before {
+  content: "\ef58";
+}
+.icon-gerenzhongxin-copy:before {
+  content: "\ef5a";
+}
+.icon-qiandao1-copy:before {
+  content: "\ef5b";
+}
+.icon-jiangbei-copy:before {
+  content: "\ef5c";
+}
+.background {
+  background-color: #dfe6e9;
+  height: 100vh;
+}
+.background .mask {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+.background .sub {
+  position: absolute;
+  bottom: 2rem;
+  left: 25%;
+  z-index: 1000;
+  color: white;
+}
+.background .user_info_wrap {
+  height: 40vh;
+  background-color: antiquewhite;
+  margin-bottom: 1rem;
+}
+.background .user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.background .user_info_wrap .user_img_wrap .user_bg {
+  height: 40vh;
+  width: 100%;
+  filter: blur(7rpx);
+}
+.background .user_info_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.background .user_info_wrap .user_info .user_icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.background .user_info_wrap .user_info .user_name {
+  color: white;
+}
+.background .integral {
+  background-color: white;
+  width: 85%;
+  border-bottom: 7rpx solid #dfe6e9;
+  margin: 0 auto;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+  align-items: flex-end;
+}
+.background .integral .iconfont {
+  font-size: 2rem;
+  margin-right: 1rem ;
+}
+.background .clan {
+  background-color: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.background .clan .iconfont {
+  font-size: 2rem;
+  margin-right: 1rem ;
+}

@@ -1,0 +1,23 @@
+<view class="content" wx:for="{{listTime}}" wx:key="key">
+    <view class="left">
+        <image class="image" src="{{item.src}}" mode="widthFix" lazy-load="false" />
+        <view class="name">{{item.name}}</view>
+    </view>
+    <view class="point">{{item.time}}</view>
+</view>
+
+<view class="content" wx:for="{{beforePoint}}" wx:key="key">
+    <view class="left">
+        <image class="image" src="{{item.src}}" mode="widthFix" lazy-load="false" />
+        <view class="name">{{item.id}}</view>
+    </view>
+    <view class="point">{{item.score}}</view>
+</view>
+<view class="content" wx:for="{{afterPoint}}" wx:key="key">
+    <view class="left">
+        <image class="image" src="http://47.96.86.132:9099/11.png" mode="widthFix" lazy-load="false" />
+        <view class="name">{{item.id}}</view>
+    </view>
+    <view class="point">{{item.score}}</view>
+</view>
+

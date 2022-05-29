@@ -1,0 +1,58 @@
+// .background {
+//   position: absolute;
+//   width: 100%;
+//   z-index: -10;
+//   background-size: 100% 100%; 
+// }
+page {
+  overflow:hidden; 
+  position:fixed; 
+  background-image:url('http://47.96.86.132:9099/8.gif'); 
+  /*下面的是关键的设置100%显示*/ 
+  background-size: 100% 100%; 
+  .word{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .content {
+    background-color: rgba(255, 255, 255, 0.3571428571428571);
+    width: 85vw;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    .title {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+    .team {
+      margin: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .name {
+        text-align: center;
+        width: 3.5rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.6928571428571427);
+        border-radius: 1rem;
+      }
+      .input-placeholder {
+        color: black;
+      }
+      .name_int {
+        padding-left: 1rem;
+        width: 12rem;
+        height: 2rem;
+        margin: 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.6928571428571427);
+      }
+    }
+    .but {
+      margin: 0.5rem auto;
+    }
+  }
+  }
+  
+}

@@ -1,0 +1,51 @@
+page {
+  overflow: hidden;
+  position: fixed;
+  background-image: url('http://47.96.86.132:9099/8.gif');
+  /*下面的是关键的设置100%显示*/
+  background-size: 100% 100%;
+}
+page .word {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+page .word .content {
+  background-color: rgba(255, 255, 255, 0.35714286);
+  width: 85vw;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+}
+page .word .content .title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+page .word .content .team {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+page .word .content .team .name {
+  text-align: center;
+  width: 3.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.69285714);
+  border-radius: 1rem;
+}
+page .word .content .team .input-placeholder {
+  color: black;
+}
+page .word .content .team .name_int {
+  padding-left: 1rem;
+  width: 12rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.69285714);
+}
+page .word .content .but {
+  margin: 0.5rem auto;
+}

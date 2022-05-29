@@ -1,0 +1,39 @@
+<view wx:if="{{isplay}}" class="white">
+    <view class="whiteBack">
+        <i class="iconfont icon-yingxionglianmeng"></i>
+        <view class="text">你已经报名噢</view>
+        <view class="text">添加战队请点击个人中心</view>
+        <view class="text">战队只需要队长一个人填写</view>
+    </view>
+</view>
+  
+<view class="word" wx:else>
+    <view class="content">
+        <view class="form">
+            <view class="header">2021第三届乱斗杯报名表</view>
+            <view class="information">
+                <view class="name">
+                    <text class=" fontsize">姓名</text>
+                    <input class="inputSize" value="{{info.name}}" bindinput="inputInfo" data-obj="info" data-item="name" type="text" placeholder="请填写姓名(中文)" placeholder-class="text_style"></input>
+                </view>
+                <view class="ID">
+                    <text class=" fontsize">学号</text>
+                    <input class="inputSize" value="{{info.id}}" bindinput="inputInfo" data-obj="info" data-item="id" type="number" maxlength='10' placeholder="请填写学号（10位数字）" placeholder-class="text_style"></input>
+                </view>
+                <view class="phone">
+                    <text class=" fontsize">电话</text>
+                    <input class=" inputSize" value="{{info.phone}}" bindinput="inputInfo" data-obj="info" data-item="phone" type="number" maxlength='11' placeholder="请填写电话(11位数字)" placeholder-class="text_style"></input>
+                </view>
+                <view class="rule">
+                    <view class="rule_name fontsize">注意</view>
+                    <view class="regulation">
+                        <view>1.采用征召模式，网页5ban。</view>
+                        <view>2.严禁代打，代练，非本校人员参加（不抗拒因素除外）</view>
+                        <view>3.比赛为三轮淘汰赛,最后为线下（报名费15）详情请见游戏交流群362071380</view>
+                    </view>
+                </view>
+            </view>
+            <button type="default" plain="true" class="but" bind:tap="subinfo">报名</button>
+        </view>
+    </view>
+</view>
